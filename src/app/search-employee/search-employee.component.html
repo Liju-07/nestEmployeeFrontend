@@ -1,0 +1,68 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container-fluid">
+    <div class="row">
+      
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="label-form">Employee Id</label>
+            <input name="empid" type="text" class="form-control" [(ngModel)]="empid"></div>
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                <br>
+                <button class="btn btn-primary" (click)="read()">search</button>
+            </div>
+<br><br>
+        
+         <div *ngFor="let i of empdata">
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="label-form">Employee Id</label>
+                <input value="{{i.empid}}" type="text" class="form-control" [(ngModel)]="i.empid"></div>
+
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <label for="" class="label-form">Employee Name</label>
+                <input value="{{i.name}}" type="text" class="form-control" [(ngModel)]="i.name"></div>
+    
+    
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                    <label for="" class="label-form">DOB</label>
+                    <input  value="{{i.dob}}" type="date" class="form-control" [(ngModel)]="i.dob"></div>
+    
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                <label for="" class="label-form">DOJ</label>
+                <input  value="{{i.jod}}" type="text" class="form-control" [(ngModel)]="i.jod"></div>
+    
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                    <label for="" class="label-form">Number</label>
+                    <input  value="{{i.number}}" type="text" class="form-control" [(ngModel)]="i.number"></div>
+    
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                        <label for="" class="label-form">Email</label>
+                        <input  value="{{i.email}}" type="text" class="form-control" [(ngModel)]="i.email"></div>
+        
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                            <label for="" class="label-form">Username</label>
+                            <input  value="{{i.username}}" type="text" class="form-control" [(ngModel)]="i.username"></div>
+
+                            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                                <label for="" class="label-form">Password</label>
+                                <input  value="{{i.password}}" type="text" class="form-control" [(ngModel)]="i.password"></div>
+            
+
+
+                    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xxl-12">
+                        <br>
+                        <button class="btn btn-success" (click)="edit()">Update</button>
+                    </div>
+
+
+
+
+
+         </div>
+    
+            
+            </div>
+
+
+
+</div>

@@ -1,0 +1,54 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+        
+          <table class="table">
+            <thead>
+              <tr>
+                 <th scope="col">Emp Id</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Number</th>
+                <th scope="col">Email</th>
+                <th scope="col">Username</th>
+                <th scope="col">Password</th>
+                <th scope="col">DOB</th>
+                <th scope="col">DOJ</th>
+               
+        
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of Empdata">
+             
+                <td>{{i.empid}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.address}}</td>
+                <td>{{i.number}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.username}}</td>
+                <td>{{i.password}}</td>
+                <td>{{i.dob}}</td>
+                <td>{{i.jod}}</td>
+
+
+
+               <td> <button class="btn btn-danger" (click)="delete(i.empid)">Delete</button></td>
+
+               
+                
+                
+                
+              
+              </tr>
+            
+            </tbody>
+          </table>
+
+        
+        </div>
+    </div>
+</div>
