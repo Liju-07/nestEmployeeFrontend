@@ -42,6 +42,12 @@ viewsec=()=>{
 secdelete=(data:any)=>{
   return this.http.post("http://localhost:8080/deletesecurity",data)
 }
+searchsec=(data:any)=>{
+  return this.http.post("http://localhost:8080/searchsecurity",data)
+}
+updatesec=(data:any)=>{
+  return this.http.post("http://localhost:8080/updatesecurity",data)
+}
 
 
 

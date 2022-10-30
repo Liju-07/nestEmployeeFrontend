@@ -19,7 +19,8 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewempComponent } from './viewemp/viewemp.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { AddSecComponent } from './add-sec/add-sec.component';
-import { ViewsecComponent } from './viewsec/viewsec.component'
+import { ViewsecComponent } from './viewsec/viewsec.component';
+import { SearchSecComponent } from './search-sec/search-sec.component'
 
 const app:Routes=[
   {
@@ -60,6 +61,9 @@ const app:Routes=[
   },
   {
     path:"viewsec",component:ViewsecComponent
+  },
+  {
+    path:"searchsec",component:SearchSecComponent
   }
 
 ]
@@ -80,7 +84,8 @@ const app:Routes=[
     ViewempComponent,
     SearchEmployeeComponent,
     AddSecComponent,
-    ViewsecComponent
+    ViewsecComponent,
+    SearchSecComponent
   ],
   imports: [
     BrowserModule,
