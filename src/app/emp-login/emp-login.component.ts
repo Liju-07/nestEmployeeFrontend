@@ -27,6 +27,7 @@ export class EmpLoginComponent implements OnInit {
         {
           alert("Login Success")
           localStorage.setItem("empid",res[0].empid)
+          console.log(res[0].empid)
           this.route.navigate(['/emphome'])
         }
         else

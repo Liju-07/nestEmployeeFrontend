@@ -1,0 +1,50 @@
+<app-admin-navbar></app-admin-navbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+        
+          <table class="table">
+            <thead>
+              <tr>
+                 <th scope="col">Employee Id</th>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Leave Type</th>
+                <th scope="col">Description</th>
+                <th scope="col">Apply Date</th>  
+                <th scope="col">Leave Date</th>
+               
+               
+        
+      
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of leavedata">
+             
+                <td>{{i.empid}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.type}}</td>
+                <td>{{i.description}}</td>
+               
+                <td>{{i.apply_date}}</td>
+                <td>{{i.leave_date}}</td>
+               
+                <td> <button class="btn btn-danger" (click)="decline(i.empid)">Decline</button></td>
+
+               <td> <button class="btn btn-success" (click)="approve(i.empid)">Approve</button></td>
+
+               
+                
+                
+                
+              
+              </tr>
+            
+            </tbody>
+          </table>
+
+        
+        </div>
+    </div>
+</div>

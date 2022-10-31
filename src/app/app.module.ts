@@ -20,7 +20,11 @@ import { ViewempComponent } from './viewemp/viewemp.component';
 import { SearchEmployeeComponent } from './search-employee/search-employee.component';
 import { AddSecComponent } from './add-sec/add-sec.component';
 import { ViewsecComponent } from './viewsec/viewsec.component';
-import { SearchSecComponent } from './search-sec/search-sec.component'
+import { SearchSecComponent } from './search-sec/search-sec.component';
+import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
+import { EmpApplyleaveComponent } from './emp-applyleave/emp-applyleave.component';
+import { LeaveApproveComponent } from './leave-approve/leave-approve.component';
+import { ViewEmpleaveComponent } from './view-empleave/view-empleave.component'
 
 const app:Routes=[
   {
@@ -64,6 +68,12 @@ const app:Routes=[
   },
   {
     path:"searchsec",component:SearchSecComponent
+  },
+  {
+    path:"empleave",component:EmpApplyleaveComponent
+  },
+  {
+    path:"leaveapprove",component:LeaveApproveComponent
   }
 
 ]
@@ -85,7 +95,11 @@ const app:Routes=[
     SearchEmployeeComponent,
     AddSecComponent,
     ViewsecComponent,
-    SearchSecComponent
+    SearchSecComponent,
+    EmpNavbarComponent,
+    EmpApplyleaveComponent,
+    LeaveApproveComponent,
+    ViewEmpleaveComponent
   ],
   imports: [
     BrowserModule,

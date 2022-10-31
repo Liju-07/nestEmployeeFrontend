@@ -48,7 +48,14 @@ searchsec=(data:any)=>{
 updatesec=(data:any)=>{
   return this.http.post("http://localhost:8080/updatesecurity",data)
 }
-
-
+empleave=(data:any)=>{
+  return this.http.post("http://localhost:8080/addleave",data)
+}
+leavereq=()=>{
+  return this.http.get("http://localhost:8080/leaverequests")
+}
+leavestatus=(data:any)=>{
+  return this.http.post("http://localhost:8080/leaveStatus",data)
+}
 
 }
