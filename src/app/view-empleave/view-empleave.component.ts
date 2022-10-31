@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-view-empleave',
@@ -7,7 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewEmpleaveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:ApiService) { 
+    this.fetchdata()
+  }
+
+fetchdata=()=>{
+  this.api.viewallleave().subscribe(
+    (data)=>{this.leavedata=data}
+  )
+}
+
+  leavedata:any=[]
 
   ngOnInit(): void {
   }

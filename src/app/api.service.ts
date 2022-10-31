@@ -57,5 +57,11 @@ leavereq=()=>{
 leavestatus=(data:any)=>{
   return this.http.post("http://localhost:8080/leaveStatus",data)
 }
+viewallleave=()=>{
+  return this.http.get("http://localhost:8080/viewAllLeaves")
+}
+empleavestatus=(data:any)=>{
+  return this.http.post("http://localhost:8080/leavestatus",data)
+}
 
 }

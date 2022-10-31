@@ -24,7 +24,8 @@ import { SearchSecComponent } from './search-sec/search-sec.component';
 import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
 import { EmpApplyleaveComponent } from './emp-applyleave/emp-applyleave.component';
 import { LeaveApproveComponent } from './leave-approve/leave-approve.component';
-import { ViewEmpleaveComponent } from './view-empleave/view-empleave.component'
+import { ViewEmpleaveComponent } from './view-empleave/view-empleave.component';
+import { EmpLeaveStatusComponent } from './emp-leave-status/emp-leave-status.component'
 
 const app:Routes=[
   {
@@ -74,6 +75,12 @@ const app:Routes=[
   },
   {
     path:"leaveapprove",component:LeaveApproveComponent
+  },
+  {
+    path:"viewleaves",component:ViewEmpleaveComponent
+  },
+  {
+    path:"leavestatus",component:EmpLeaveStatusComponent
   }
 
 ]
@@ -99,7 +106,8 @@ const app:Routes=[
     EmpNavbarComponent,
     EmpApplyleaveComponent,
     LeaveApproveComponent,
-    ViewEmpleaveComponent
+    ViewEmpleaveComponent,
+    EmpLeaveStatusComponent
   ],
   imports: [
     BrowserModule,
